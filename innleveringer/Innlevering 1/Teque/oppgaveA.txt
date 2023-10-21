@@ -1,0 +1,62 @@
+Input push_front x
+Output None
+
+Prosedure push_front(x):
+    if |A| ← 0 then
+        foerste ← x
+        A.append(x)
+    else then
+        foerste ← x
+        A.insert(0, x)
+
+    |A|++
+
+Input push_back x
+Output None
+
+Prosedure push_back(x):
+    if |A| ← 0 then
+        siste ← x
+        A.append(x)
+    else then
+        siste ← x
+        A.append(x)
+
+    |A|++
+
+Input push_middle x
+Output None
+
+Prosedure push_middle(x):
+    if |A| ← 0 then
+        midten ← x
+        A.append(x)
+
+    elif |A| ← 1 then
+        A.append(x)
+
+
+    else then
+        length ← |A|+1
+        half ← length // 2
+        A.insert(half, x)
+
+    |A|++
+
+Input get indeks
+Output A[indeks]
+
+Prosedure get(indeks):
+    if indeks ← 0 then
+    retrun A[0]
+
+    else if indeks ← (|A|-1) then
+    return A[-1]
+
+    else then
+    retrun A[indeks]
+
+
+
+
+

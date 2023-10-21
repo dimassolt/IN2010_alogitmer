@@ -1,0 +1,13 @@
+Prosedure push_front(x)
+O(n) funksjon "insert" itererer gjennom hele lista, men vi setter en ny element
+på første posisjon og det tar akkurat 1 iterasjon
+
+Prosedure push_back(x)
+O(1) hvis vi setter en ny elemet vha "append" på siste posijon,
+skal liste bare extendes med 1 ekstra element. 
+
+Prosedure push_middle(x)
+O(n) fordi vi reduserer "insert" operasjon i half til å finne den siste elementen
+
+Prosedure get(indeks)
+O(n) for det verste tilfellet når vi går gjennom hele lista til å finne den siste elementen
